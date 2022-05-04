@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Prueba Front End</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="topnav">
+    <a><b>MENÚ DESPLEGABLE</b></a>
+    <div id="myLinks">
+        <a href="#clima"><b>API METAWEATHER</b></a>
+        <a href="#info"><b>INFORMACIÓN DE LA PÁGINA</b></a>
+    </div>
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+    <div class="div_1" id="clima">
+        <hr>
+        <h3 style="text-align: center;">API MetaWeather</h3>        
+        
+        <div class="container">
+            <h3>Clima en la CDMX del mes de abril.</h3>
+            <div id="searchWrapper">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Buscar"/>
+                <p><small> Entradas válidas: Clear, Heavy rain, Heavy cloud, Light cloud, Showers o por temperatura en grados Celsius. </small></p>
+            </div>
+            <ul id="tiempo"></ul>
+        </div>
+        <hr>
+    </div>
+
+    <div class="div_2" id="info">
+        <hr>
+        <h3 style="text-align: center;">INFORMACIÓN DE LA PÁGINA</h3>
+        <p>
+            Página para la prueba de Front End <br>
+            <br>
+            HTML5 + CSS3 + Javascript + API METAWEATHER <br>
+            <br>
+            <br>
+            Objetivos:
+            <ol>
+            <li>Diseña un sitio web full responsive sin utilizar frameworks como Bootstrap o
+            Foundation, el diseño es a tu elección.<br>
+            <br>
+            <li>Conectate a alguna de las API proporcionadas en las temáticas.</li>
+            <br>
+            <li>Agrega la opción de búsqueda de información.</li>
+            <br>
+            <li>Interactúa con la información obtenida del API, flujo básico de navegación de
+            recursos.</li>
+            <br>
+            <li>Agrega un menú de hamburguesa y un botón flotante.</li>
+            <br>
+            <li>Añade estados.</li>
+            <br>
+            <li>Añade Redux.</li>
+            <br>
+            <li>Muestra tu proyecto live en alguna plataforma en la nube.</li>
+            <br>
+            <li>Agrega un preprocesador de estilos.</li>
+            <br>
+            <li>Empaqueta tu aplicación en un contenedor de Docker.</li>
+            </ol>
+
+        </p>
+        <hr>
+    </div>
+
+    <div class="footer">
+        <h3>&copy Elliot Hernández</h3>
+    </div>
+
+    <a href="#" class="float">
+        <i class="fa fa-angle-double-up my-float" aria-hidden="true"></i>
+    </a>
+
+    <!-- scripts -->
+    <script src="app.js"></script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+    }
+    </script>
+
+</body>
+
+</html>
